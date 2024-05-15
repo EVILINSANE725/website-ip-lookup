@@ -1,0 +1,92 @@
+/* Styles for Application Functionality */
+h1{
+  text-align: center;
+}
+
+.clear-button{
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  border: none;
+  background: white;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputcontainer{
+  position: relative;
+
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.result div {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.result h2 {
+  margin-top: 0;
+}
+
+@media(max-width : 768px){
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  button[type="submit"] {
+    padding: 20px 20px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+  }
+
+}
